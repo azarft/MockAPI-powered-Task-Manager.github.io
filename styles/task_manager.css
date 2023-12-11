@@ -1,0 +1,204 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 40px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background: rgb(2,0,36);
+    backdrop-filter: blur(10px);
+    color: #fff;
+}
+
+.tasks td button:last-child {
+    background-color: #d71313; /* Red background color for delete button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tasks td button:last-child:hover {
+    background-color: #550202;
+}
+
+.tasks td button:first-child {
+    background-color: #4ab14d; /* Yellow background color for edit button */
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.tasks td button:first-child:hover {
+    background-color: #3a8f3d;
+}
+
+
+.authentication {
+    background-color: #333;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.login-section,
+.logout-section {
+    display: inline-block;
+}
+
+.task-manager {
+    margin: 10px;
+}
+
+.add-task,
+.filter-buttons {
+    margin-bottom: 10px;
+}
+
+.filter-buttons button {
+    margin-right: 5px;
+    background-color: #555;
+    color: #fff;
+    border: none;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.filter-buttons .selected-filter {
+    background-color: #4caf50;
+    color: white;
+}
+
+.tasks table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.tasks th,
+.tasks td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+
+.tasks th {
+    background-color: #4caf50;
+    color: white;
+}
+
+.add-task input,
+.add-task button {
+    padding: 10px;
+    margin-right: 10px;
+}
+
+.add-task button {
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.add-task button:hover {
+    background-color: #45a049;
+}
+
+.success-message {
+    color: #4caf50;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.modal button {
+    padding: 10px;
+    margin-top: 10px;
+    background-color: #4caf50;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.modal button:hover {
+    background-color: #45a049;
+}
+
+.User {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.User button {
+    margin-left: 10px;
+    padding: 10px;
+    background-color: #d71313;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.User button:hover {
+    background-color: #550202;
+}
+
+/* Media query for responsiveness */
+@media only screen and (max-width: 600px) {
+    body {
+        padding: 10px;
+    }
+
+    .task-manager {
+        margin: 5px;
+    }
+
+    .filter-buttons button {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+
+    .tasks th,
+    .tasks td {
+        font-size: 10px;
+        padding: 8px;
+    }
+
+    .add-task input,
+    .add-task button {
+        padding: 8px;
+        margin-right: 5px;
+    }
+
+    .success-message {
+        font-size: 12px;
+    }
+
+    .modal-content {
+        padding: 10px;
+    }
+
+    .User button {
+        padding: 8px;
+        margin-left: 5px;
+    }
+}

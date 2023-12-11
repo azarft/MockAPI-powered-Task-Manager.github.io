@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MockAPI-powered Task Manager</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/styles.css" />
+  </head>
+  <body>
+    <button class="burger" onclick="toggleMenu()"></button>
+    <div class="content">
+      <div class="background"></div>
+      <div class="About">
+        <h1>Azar Task Manager</h1>
+        <p>Your solution for seamless task management. Simplify your workflow, stay organized, and enhance productivity with intuitive features, collaborative tools, and smart notifications.</p>
+        <p>Sign up or sign in to start using Azar Task Manager.</p>
+        <div class="buttons">
+          <a href="signin.html">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Get Started
+          </a>
+        </div>
+      </div>
+    </div>
     
-</body>
+    <div class="menu">
+      <nav>
+        <a style="animation-delay: 0.2s">About</a>
+        <a href = "signin.html"  style="animation-delay: 0.3s">Get Started</a>
+        <a style="animation-delay: 0.4s">Contact</a>
+      </nav>
+    </div>
+    <script type="text/javascript">
+      const toggleMenu = () => document.body.classList.toggle("open");
+    </script>
+  </body>
 </html>

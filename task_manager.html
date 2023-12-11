@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-dm9s2tFD6R+wFZlk4TEU3pRW/zu3L5rKbS9d5oT2p7j5MR3Oq4qOPKpDQmMEN9DH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/task_manager.css">
+</head>
+<body>
+    <div class="User">
+        <h4 id = "userName"></h4>
+        <a href="index.html"><button id = "logout"> Log out</button></a>
+    </div>
+
+    <div class="task-manager">
+        <div class="add-task">
+            <input type="text" id="taskNameInput" placeholder="Task Name">
+            <input type="text" id="taskDescriptionInput" placeholder="Task Description">
+            <input type="date" id="taskDeadlineInput">
+            <button id="saveTaskBtn" onclick="saveTask()">Save Task</button>
+        </div>
+
+        <div class="filter-buttons">
+            <input type="radio" name="filterType" id="allTasksBtn" onclick="filterTasks('all')" checked>
+            <label for="allTasksBtn">All Tasks</label>
+            
+            <input type="radio" name="filterType" id="completedTasksBtn" onclick="filterTasks('completed')">
+            <label for="completedTasksBtn">Completed Tasks</label>
+            
+            <input type="radio" name="filterType" id="activeTasksBtn" onclick="filterTasks('active')">
+            <label for="activeTasksBtn">Active Tasks</label>
+        </div>
+        <div class="tasks">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Task Name</th>
+                        <th>Task Description</th>
+                        <th>Task Deadline</th>
+                        <th>Completed</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="taskList">
+                    <!-- Task items will go here -->
+                </tbody>
+            </table>
+        </div>
+        <div id="successMessage" class="success-message"></div>
+    </div>
+
+    <script src="scripts/main.js"></script>
+</body>
+</div>
+</html>
